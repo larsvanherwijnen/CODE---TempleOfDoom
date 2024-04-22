@@ -1,0 +1,5 @@
+@startuml
+class FloorFactory {
+    + CreateFloor(floorDto:SpecialFloorTilesDto) : IFloor
+}
+@enduml

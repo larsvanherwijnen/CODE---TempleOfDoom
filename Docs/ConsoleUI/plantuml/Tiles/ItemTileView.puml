@@ -1,0 +1,8 @@
+@startuml
+class ItemTileView {
+    + ItemTileView(type:IItem)
+    + GetIcon() : char
+    + GetColor() : ConsoleColor
+}
+ITileView <|-- ItemTileView
+@enduml

@@ -1,0 +1,55 @@
+@startuml
+class GameObject {
+}
+class RoomsDto {
+    + id : int <<get>> <<set>>
+    + type : string <<get>> <<set>>
+    + width : int <<get>> <<set>>
+    + height : int <<get>> <<set>>
+}
+class ItemsDto {
+    + type : string <<get>> <<set>>
+    + damage : int <<get>> <<set>>
+    + x : int <<get>> <<set>>
+    + y : int <<get>> <<set>>
+    + color : string <<get>> <<set>>
+}
+class SpecialFloorTilesDto {
+    + type : string <<get>> <<set>>
+    + direction : string <<get>> <<set>>
+    + x : int <<get>> <<set>>
+    + y : int <<get>> <<set>>
+}
+class EnemiesDto {
+    + type : string <<get>> <<set>>
+    + x : int <<get>> <<set>>
+    + y : int <<get>> <<set>>
+    + minX : int <<get>> <<set>>
+    + minY : int <<get>> <<set>>
+    + maxX : int <<get>> <<set>>
+    + maxY : int <<get>> <<set>>
+}
+class ConnectionsDto {
+    + NORTH : int <<get>> <<set>>
+    + SOUTH : int <<get>> <<set>>
+    + WEST : int <<get>> <<set>>
+    + EAST : int <<get>> <<set>>
+}
+class DoorsDto {
+    + type : string <<get>> <<set>>
+    + color : string <<get>> <<set>>
+    + no_of_stones : int <<get>> <<set>>
+}
+class PortalDto {
+    + roomId : int <<get>> <<set>>
+    + x : int <<get>> <<set>>
+    + y : int <<get>> <<set>>
+}
+class PlayerDto {
+    + startRoomId : int <<get>> <<set>>
+    + startX : int <<get>> <<set>>
+    + startY : int <<get>> <<set>>
+    + lives : int <<get>> <<set>>
+}
+GameObject --> "player" PlayerDto
+@enduml

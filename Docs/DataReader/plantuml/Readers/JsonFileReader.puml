@@ -1,0 +1,6 @@
+@startuml
+class JsonFileReader {
+    + ReadData(file:string) : GameObject
+}
+IFileReader <|-- JsonFileReader
+@enduml

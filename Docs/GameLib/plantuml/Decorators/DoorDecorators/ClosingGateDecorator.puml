@@ -1,0 +1,8 @@
+@startuml
+class ClosingGateDecorator {
+    + ClosingGateDecorator(decoratee:IDoor)
+    + <<override>> IsOpen(player:Player) : bool
+    + <<override>> AfterUse(player:Player) : void
+}
+BaseDoorDecorator <|-- ClosingGateDecorator
+@enduml

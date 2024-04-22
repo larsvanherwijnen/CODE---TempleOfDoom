@@ -1,0 +1,6 @@
+@startuml
+class GameReader {
+    + GameReader(doorFactory:DoorFactory, roomFactory:RoomFactory, roomItemFactory:ItemFactory)
+    + Read(filePath:string) : Game
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class InputReader {
+    + InputReader(game:Game)
+    + Input() : void
+}
+@enduml

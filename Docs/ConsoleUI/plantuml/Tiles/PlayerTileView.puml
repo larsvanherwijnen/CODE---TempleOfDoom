@@ -1,0 +1,7 @@
+@startuml
+class PlayerTileView {
+    + GetIcon() : char
+    + GetColor() : ConsoleColor
+}
+ITileView <|-- PlayerTileView
+@enduml

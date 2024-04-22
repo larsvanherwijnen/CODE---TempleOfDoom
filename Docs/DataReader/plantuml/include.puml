@@ -1,0 +1,10 @@
+@startuml
+!include .//DataProcessor.puml
+!include .//GameReader.puml
+!include .//Factories/DoorFactory.puml
+!include .//Factories/FileReaderFactory.puml
+!include .//Factories/ItemFactory.puml
+!include .//Factories/RoomFactory.puml
+!include .//Interface/IFileReaders.puml
+!include .//Readers/JsonFileReader.puml
+@enduml

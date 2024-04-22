@@ -1,0 +1,8 @@
+@startuml
+class OpenOnOddDecorator {
+    + OpenOnOddDecorator(decoratee:IDoor)
+    + <<override>> IsOpen(player:Player) : bool
+    + <<override>> AfterUse(player:Player) : void
+}
+BaseDoorDecorator <|-- OpenOnOddDecorator
+@enduml

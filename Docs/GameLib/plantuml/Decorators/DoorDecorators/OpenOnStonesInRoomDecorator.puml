@@ -1,0 +1,8 @@
+@startuml
+class OpenOnStonesInRoomDecorator {
+    + OpenOnStonesInRoomDecorator(decoratee:IDoor, numberOfStones:int)
+    + <<override>> IsOpen(player:Player) : bool
+    + <<override>> AfterUse(player:Player) : void
+}
+BaseDoorDecorator <|-- OpenOnStonesInRoomDecorator
+@enduml

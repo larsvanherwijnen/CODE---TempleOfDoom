@@ -1,0 +1,6 @@
+@startuml
+class DoorFactory {
+    + CreateDoor(connection:ConnectionsDto) : IDoor
+    + DecorateDoor(door:IDoor, type:string, color:string, noOfStones:int) : IDoor
+}
+@enduml

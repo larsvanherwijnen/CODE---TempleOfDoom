@@ -1,0 +1,5 @@
+@startuml
+class RoomFactory {
+    + CreateRoom(room:RoomsDto) : Room
+}
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class Game {
+    + Level : string <<get>>
+    + Active : bool <<get>>
+    + Game(player:Player, rooms:List<Room>, level:string)
+    + StonesNeeded : int <<get>> = 5
+    + Move(direction:Direction) : void
+    + Shoot() : void
+    + AddObserver(observer:IGameObserver) : void
+    + PlayerHasWon() : bool
+}
+
+Game --> "Player" Player
+@enduml

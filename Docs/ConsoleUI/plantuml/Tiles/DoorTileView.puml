@@ -1,0 +1,9 @@
+@startuml
+class DoorTileView {
+    + DoorTileView(door:IDoor, direction:Direction)
+    + GetIcon() : char
+    + GetIconString(door:IDoor) : char
+    + GetColor() : ConsoleColor
+}
+ITileView <|-- DoorTileView
+@enduml

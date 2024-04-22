@@ -1,0 +1,24 @@
+@startuml
+class Room {
+    + Id : int <<get>>
+    + Width : int <<get>>
+    + Height : int <<get>>
+    + Room(id:int, width:int, height:int)
+    + IsPartOfBorder(coords:Coords) : bool
+    + AddRoomItems(items:List<IItem>) : void
+    + AddConnection(direction:Direction, connection:Connection?) : void
+    + AddPortal(coords:Coords, portal:Portal) : void
+    + AddFloors(floors:List<IFloor>) : void
+    + AddEnemies(enemies:List<EnemyAdapter>) : void
+    + HasPortal(coords:Coords) : bool
+    + HasSpecialFloor(coords:Coords, floor:IFloor) : bool
+    + HasPortal(coords:Coords, portal:Portal) : bool
+    + HasItem(coords:Coords, item:IItem) : bool
+    + HasEnemy(coords:Coords) : bool
+    + GetStonesInRoom() : int
+    + MoveEnemies() : void
+    + Shoot(coords:Coords) : void
+    + HasConnection(coords:Coords, direction:Direction, connection:Connection?) : bool
+    + ToggleToggleDoors() : void
+}
+@enduml

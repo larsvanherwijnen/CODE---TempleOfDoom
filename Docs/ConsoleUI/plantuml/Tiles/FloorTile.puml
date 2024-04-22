@@ -1,0 +1,8 @@
+@startuml
+class FloorTile {
+    + FloorTile(floor:IFloor)
+    + GetIcon() : char
+    + GetColor() : ConsoleColor
+}
+ITileView <|-- FloorTile
+@enduml

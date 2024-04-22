@@ -1,0 +1,7 @@
+@startuml
+interface IFloor {
+    + OnEnter(currentCoords:Coords) : Coords
+}
+IFloor --> "Coords" Coords
+IFloor --> "Direction" Direction
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+!include .//GameView.puml
+!include .//InputReader.puml
+!include .//Tiles/BorderTileView.puml
+!include .//Tiles/DoorTileView.puml
+!include .//Tiles/EmptyTileView.puml
+!include .//Tiles/ItemTileView.puml
+!include .//Tiles/ITileView.puml
+!include .//Tiles/PlayerTileView.puml
+@enduml

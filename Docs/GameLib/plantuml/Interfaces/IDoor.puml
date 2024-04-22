@@ -1,0 +1,6 @@
+@startuml
+interface IDoor {
+    + GetColor() : string
+    + Toggle() : void
+}
+@enduml

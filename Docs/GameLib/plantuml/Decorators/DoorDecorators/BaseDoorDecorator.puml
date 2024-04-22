@@ -1,0 +1,11 @@
+@startuml
+class BaseDoorDecorator {
+    + BaseDoorDecorator(decoratee:IDoor)
+    + <<virtual>> IsOpen(player:Player) : bool
+    + <<virtual>> AfterUse(player:Player) : void
+    + <<virtual>> GetColor() : string
+    + <<virtual>> Toggle() : void
+}
+IDoor <|-- BaseDoorDecorator
+BaseDoorDecorator --> "_decoratee" IDoor
+@enduml

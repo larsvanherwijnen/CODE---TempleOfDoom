@@ -1,0 +1,8 @@
+@startuml
+enum Direction {
+    North,
+    East,
+    South,
+    West,
+}
+@enduml

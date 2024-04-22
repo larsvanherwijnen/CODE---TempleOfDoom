@@ -1,0 +1,5 @@
+@startuml
+class FileReaderFactory {
+    + CreateFileReader(filePath:string) : IFileReader
+}
+@enduml

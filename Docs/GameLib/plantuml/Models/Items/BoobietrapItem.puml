@@ -1,0 +1,9 @@
+@startuml
+class BoobietrapItem {
+    + Visible : bool <<get>> <<set>> = true
+    + BoobietrapItem(coords:Coords)
+    + Interaction(player:Player) : void
+}
+IItem <|-- BoobietrapItem
+BoobietrapItem --> "Coords" Coords
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class ToggleDoorDecorator {
+    + ToggleDoorDecorator(decoratee:IDoor)
+    + <<override>> IsOpen(player:Player) : bool
+    + <<override>> AfterUse(player:Player) : void
+    + <<override>> Toggle() : void
+}
+BaseDoorDecorator <|-- ToggleDoorDecorator
+@enduml

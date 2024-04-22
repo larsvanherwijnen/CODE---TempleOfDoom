@@ -1,0 +1,10 @@
+@startuml
+class BaseItemDecorator {
+    + BaseItemDecorator(item:IItem)
+    + Visible : bool <<get>> <<set>>
+    + <<virtual>> Interaction(player:Player) : void
+    + GetItem() : IItem
+}
+IItem <|-- BaseItemDecorator
+BaseItemDecorator --> "Coords" Coords
+@enduml

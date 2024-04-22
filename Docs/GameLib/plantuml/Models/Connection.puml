@@ -1,0 +1,9 @@
+@startuml
+class Connection {
+    + Connection(targetRoom:Room, targetDirection:Direction, door:IDoor)
+    + GetSpawnCoords(direction:Direction) : Coords
+}
+Connection --> "TargetRoom" Room
+Connection --> "TargetDirection" Direction
+Connection --> "Door" IDoor
+@enduml

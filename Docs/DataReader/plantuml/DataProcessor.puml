@@ -1,0 +1,6 @@
+@startuml
+class DataProcessor {
+    + SetFileReaderStrategy(strategy:IFileReader?) : void
+    + ProcessData(file:string) : GameObject
+}
+@enduml

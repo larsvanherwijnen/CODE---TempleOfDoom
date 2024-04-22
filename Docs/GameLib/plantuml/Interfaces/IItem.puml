@@ -1,0 +1,5 @@
+@startuml
+interface IItem {
+    + Interaction(player:Player) : void
+}
+@enduml

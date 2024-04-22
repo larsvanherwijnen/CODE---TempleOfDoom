@@ -1,0 +1,7 @@
+@startuml
+class BorderTileView {
+    + GetIcon() : char
+    + GetColor() : ConsoleColor
+}
+ITileView <|-- BorderTileView
+@enduml

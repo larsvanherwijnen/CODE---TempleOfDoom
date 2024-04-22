@@ -1,0 +1,7 @@
+@startuml
+class EmptyTileView {
+    + GetIcon() : char
+    + GetColor() : ConsoleColor
+}
+ITileView <|-- EmptyTileView
+@enduml

@@ -1,0 +1,54 @@
+@startuml
+
+actor User
+participant "GameView" as GV
+participant "Game" as G
+participant "Player" as P
+participant "Room" as R
+participant "Item" as I
+
+User -> GV : Input()
+activate GV
+
+GV -> G : Move()
+activate G
+
+G -> P : Move()
+activate P
+
+P -> R : HasConnection()
+activate R
+R --> P : bool
+deactivate R
+P -> R : HasItem()
+activate R
+R --> P : bool
+deactivate R
+
+opt HasItem
+P -> I : Interact()
+activate I
+P <-- I 
+deactivate I
+end
+
+P -> R : IsPartOfBorder()
+activate R
+R --> P : bool
+deactivate R
+P -> R : OutsideRoom()
+activate R
+R --> P : bool
+deactivate R
+
+P --> G : 
+deactivate P
+
+G -> GV : NotifyObservers()
+deactivate G
+
+GV --> User
+deactivate GV
+
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class ColoredDoorDecorator {
+    + ColoredDoorDecorator(decoratee:IDoor, color:string)
+    + <<override>> IsOpen(player:Player) : bool
+    + <<override>> AfterUse(player:Player) : void
+    + <<override>> GetColor() : string
+}
+BaseDoorDecorator <|-- ColoredDoorDecorator
+@enduml

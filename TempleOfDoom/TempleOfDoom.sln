@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{8481F925-D3B7-49E9-93F8-4BFF20596BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataReader", "DataReader\DataReader.csproj", "{C61A120F-8538-4E8B-8D96-0CE84D670EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLib", "GameLib\GameLib.csproj", "{0D9AFDD8-0D3A-41F5-B83E-6580A2A9270A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8481F925-D3B7-49E9-93F8-4BFF20596BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8481F925-D3B7-49E9-93F8-4BFF20596BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8481F925-D3B7-49E9-93F8-4BFF20596BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8481F925-D3B7-49E9-93F8-4BFF20596BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61A120F-8538-4E8B-8D96-0CE84D670EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61A120F-8538-4E8B-8D96-0CE84D670EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61A120F-8538-4E8B-8D96-0CE84D670EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61A120F-8538-4E8B-8D96-0CE84D670EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9AFDD8-0D3A-41F5-B83E-6580A2A9270A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9AFDD8-0D3A-41F5-B83E-6580A2A9270A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9AFDD8-0D3A-41F5-B83E-6580A2A9270A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9AFDD8-0D3A-41F5-B83E-6580A2A9270A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

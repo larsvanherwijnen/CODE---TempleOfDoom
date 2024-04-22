@@ -1,0 +1,9 @@
+@startuml
+class SankaraStoneItem {
+    + Visible : bool <<get>> <<set>> = true
+    + SankaraStoneItem(coords:Coords)
+    + Interaction(player:Player) : void
+}
+IItem <|-- SankaraStoneItem
+SankaraStoneItem --> "Coords" Coords
+@enduml

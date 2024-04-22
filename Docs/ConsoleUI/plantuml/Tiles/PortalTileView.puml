@@ -1,0 +1,6 @@
+@startuml
+class PortalTileView {
+    + GetBackgroundColor() : ConsoleColor
+}
+ITileView <|-- PortalTileView
+@enduml

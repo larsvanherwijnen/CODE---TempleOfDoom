@@ -1,0 +1,11 @@
+@startuml
+class Door {
+    + Open : bool <<get>> <<set>>
+    + Door(isOpen:bool)
+    + IsOpen(player:Player) : bool
+    + AfterUse(player:Player) : void
+    + GetColor() : string
+    + Toggle() : void
+}
+IDoor <|-- Door
+@enduml

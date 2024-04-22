@@ -1,0 +1,6 @@
+@startuml
+class "AddSingleton`1"<T> {
+}
+class "GetService`1"<T> {
+}
+@enduml

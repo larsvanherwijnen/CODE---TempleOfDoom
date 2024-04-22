@@ -1,0 +1,5 @@
+@startuml
+class EnemyFactory {
+    + CreateEnemy(enemy:EnemiesDto) : EnemyAdapter
+}
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+class ItemFactory {
+    + CreateItem(item:ItemsDto) : IItem
+}
+@enduml

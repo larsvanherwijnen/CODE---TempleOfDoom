@@ -1,0 +1,10 @@
+@startuml
+class EnemyAdapter {
+    + Lives : int <<get>>
+    + EnemyAdapter(enemy:Enemy)
+    + Move() : void
+    + GetCurrentCoords() : Coords
+    + SetCurrentCoords(coords:Coords) : void
+    + TakeDamage() : void
+}
+@enduml

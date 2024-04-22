@@ -1,0 +1,9 @@
+@startuml
+class ConveyorBeltFloor {
+    + ConveyorBeltFloor(coords:Coords, direction:Direction)
+    + OnEnter(currentCoords:Coords) : Coords
+}
+IFloor <|-- ConveyorBeltFloor
+ConveyorBeltFloor --> "Coords" Coords
+ConveyorBeltFloor --> "Direction" Direction
+@enduml

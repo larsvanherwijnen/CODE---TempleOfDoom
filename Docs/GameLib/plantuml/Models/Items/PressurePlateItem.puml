@@ -1,0 +1,9 @@
+@startuml
+class PressurePlateItem {
+    + Visible : bool <<get>> <<set>> = true
+    + PressurePlateItem(coords:Coords)
+    + Interaction(player:Player) : void
+}
+IItem <|-- PressurePlateItem
+PressurePlateItem --> "Coords" Coords
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class EnemyTileView {
+    + GetIcon() : char
+    + GetColor() : ConsoleColor
+}
+ITileView <|-- EnemyTileView
+@enduml

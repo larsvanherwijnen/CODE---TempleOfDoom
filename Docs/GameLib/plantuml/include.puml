@@ -1,0 +1,30 @@
+@startuml
+!include .//Adapters/EnemyAdapter.puml
+!include .//Enums/Direction.puml
+!include .//Interfaces/IDoor.puml
+!include .//Interfaces/IFloor.puml
+!include .//Interfaces/IGameObserver.puml
+!include .//Interfaces/IItem.puml
+!include .//Models/Connection.puml
+!include .//Models/ConveyorBeltFloor.puml
+!include .//Models/Coords.puml
+!include .//Models/Door.puml
+!include .//Models/Game.puml
+!include .//Models/Player.puml
+!include .//Models/Portal.puml
+!include .//Models/Room.puml
+!include .//Decorators/DoorDecorators/BaseDoorDecorator.puml
+!include .//Decorators/DoorDecorators/ClosingGateDecorator.puml
+!include .//Decorators/DoorDecorators/ColoredDoorDecorator.puml
+!include .//Decorators/DoorDecorators/OpenOnOddDecorator.puml
+!include .//Decorators/DoorDecorators/OpenOnStonesInRoomDecorator.puml
+!include .//Decorators/DoorDecorators/ToggleDoorDecorator.puml
+!include .//Decorators/ItemDecorators/BaseItemDecorator.puml
+!include .//Decorators/ItemDecorators/DamageItemDecorator.puml
+!include .//Decorators/ItemDecorators/DisappearingItemDerocator.puml
+!include .//Decorators/ItemDecorators/PickupableItemDerocator.puml
+!include .//Models/Items/BoobietrapItem.puml
+!include .//Models/Items/KeyItem.puml
+!include .//Models/Items/PressurePlateItem.puml
+!include .//Models/Items/SankaraStoneItem.puml
+@enduml

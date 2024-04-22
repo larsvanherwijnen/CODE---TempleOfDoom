@@ -1,0 +1,10 @@
+@startuml
+class KeyItem {
+    + Visible : bool <<get>> <<set>> = true
+    + Color : string <<get>> <<set>>
+    + KeyItem(coords:Coords, color:string)
+    + Interaction(player:Player) : void
+}
+IItem <|-- KeyItem
+KeyItem --> "Coords" Coords
+@enduml

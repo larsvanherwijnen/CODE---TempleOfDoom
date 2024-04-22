@@ -1,0 +1,7 @@
+@startuml
+class GameView {
+    + Draw(game:Game) : void
+    + Update(game:Game) : void
+}
+IGameObserver <|-- GameView
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class PickupableItemDerocator {
+    + PickupableItemDerocator(item:IItem)
+    + <<override>> Interaction(player:Player) : void
+}
+BaseItemDecorator <|-- PickupableItemDerocator
+@enduml

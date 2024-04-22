@@ -1,0 +1,8 @@
+@startuml
+class Portal {
+    + Portal(targetRoom:Room, coords:Coords)
+    + GetSpawnCoords(targetRoom:Room, spawnCoords:Coords) : void
+}
+
+Portal --> "TargetRoom" Room
+@enduml

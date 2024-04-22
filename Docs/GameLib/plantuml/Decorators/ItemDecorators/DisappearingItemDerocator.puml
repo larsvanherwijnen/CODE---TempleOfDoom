@@ -1,0 +1,7 @@
+@startuml
+class DisappearingItemDerocator {
+    + DisappearingItemDerocator(item:IItem)
+    + <<override>> Interaction(player:Player) : void
+}
+BaseItemDecorator <|-- DisappearingItemDerocator
+@enduml

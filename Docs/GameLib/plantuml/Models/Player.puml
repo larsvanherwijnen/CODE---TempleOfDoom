@@ -1,0 +1,14 @@
+@startuml
+class Player {
+    + Lives : int <<get>>
+    + Stones : int <<get>>
+    + Player(startRoom:Room, coords:Coords, lives:int)
+    + IsOnCoords(coords:Coords) : bool
+    + Move(direction:Direction) : void
+    + TakeDamage(damage:int) : void
+    + AddItem(item:IItem) : void
+}
+
+Player --> "Room" Room
+Player --> "Coords" Coords
+@enduml

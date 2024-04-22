@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Frontend</RootNamespace>
+    </PropertyGroup>
+    
+    <ItemGroup>
+
+        <None Include="bin\Debug\net7.0\TempleOfDoom.json" />
+        <None Include="bin\Debug\net7.0\TempleOfDoom_Extended_B_2122.json" />
+
+        <None Update="Levels\TempleOfDoom.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Levels\TempleOfDoom_Extended_B_2122.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="bin\Debug\net7.0\" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\DataReader\DataReader.csproj" />
+    </ItemGroup>
+</Project>

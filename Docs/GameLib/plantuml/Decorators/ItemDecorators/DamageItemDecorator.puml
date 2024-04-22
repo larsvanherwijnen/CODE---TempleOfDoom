@@ -1,0 +1,7 @@
+@startuml
+class DamageItemDecorator {
+    + DamageItemDecorator(item:IItem, damage:int)
+    + <<override>> Interaction(player:Player) : void
+}
+BaseItemDecorator <|-- DamageItemDecorator
+@enduml
